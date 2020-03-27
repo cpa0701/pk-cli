@@ -1,0 +1,53 @@
+.common-input{
+  width: 330px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid $pk-lineNormal;
+  margin-top: 20px;
+  padding-left: 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  outline: none;
+  &.error-input{
+    border-color: $pk-error;
+  }
+  &::-webkit-input-placeholder {
+		/* WebKit browsers */
+		  color: $pk-lightenText;
+	}
+	&:-moz-placeholder {
+	  /* Mozilla Firefox 4 to 18 */
+	  color: $pk-lightenText;
+	}
+	&::-moz-placeholder {
+	  /* Mozilla Firefox 19+ */
+	  color: $pk-lightenText;
+	}
+	&:-ms-input-placeholder {
+	  /* Internet Explorer 10+ */
+	  color: $pk-lightenText;
+	}
+}
+.pk-password-sms{
+  display: flex;
+  flex-direction: row;
+  input{
+    width: 216px;
+  }
+  span{
+    display: block;
+    width: 104px;
+    margin: 20px 0 0 10px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    &.gray-btn{
+      background-color: #E1E1E1;
+      color: #666;
+      cursor: default;
+    }
+  }
+}

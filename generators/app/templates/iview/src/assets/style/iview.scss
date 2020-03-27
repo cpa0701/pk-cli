@@ -1,0 +1,395 @@
+// 头像
+.ivu-avatar {
+  border: 3px solid rgba(255, 255, 255, 0.16);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+}
+
+// 菜单栏
+.ivu-layout-sider {
+  transition: none;
+}
+
+// 面包屑
+.ivu-breadcrumb {
+  padding-left: 8px;
+  color: $pk-lightenText;
+  line-height: 40px;
+
+  > span:last-child {
+    font-weight: normal;
+  }
+}
+
+.ivu-breadcrumb-item-separator {
+  margin: 0 5px 0 2px;
+}
+
+.ivu-tabs-bar {
+  margin: 0;
+}
+
+// 搜索栏 form表单
+.search-form {
+  display: flex;
+  min-height: 40px;
+  padding-top: 7px;
+
+  .ivu-date-picker {
+    width: 230px;
+  }
+
+  .ivu-select {
+    width: 150px;
+    // font-size: 12px;
+  }
+
+  .ivu-select-item{
+    font-size: 12px !important;
+  }
+
+  .ivu-input{
+    min-width: 140px;
+  }
+
+  .ivu-select-selection,
+  .ivu-input {
+    height: 25px;
+  }
+
+  .ivu-select-single .ivu-select-selection {
+    height: 25px;
+  }
+
+  .ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+  .ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+    height: 25px;
+    line-height: 24px;
+    font-size: 12px;
+  }
+
+  .ivu-input-prefix i,
+  .ivu-input-suffix i {
+    line-height: 25px;
+  }
+
+  .ivu-form-item-content {
+    margin-left: 0 !important;
+    line-height: 23px;
+  }
+
+  .ivu-input-icon{
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+  }
+
+  .ivu-btn {
+    padding: 0;
+    // width: 70px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 23px;
+
+    > .ivu-icon {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    > .ivu-icon + span,
+    > span + .ivu-icon {
+      margin-left: 0;
+    }
+  }
+}
+
+// 新增弹窗 form表单
+.ivu-drawer-mask {
+  background-color: transparent;
+  top: 50px;
+}
+.ivu-drawer{
+  height: calc(100% - 50px);
+  top: 50px;
+}
+.ivu-drawer-wrap{
+  top: 50px;
+}
+
+.ivu-drawer-body {
+  padding: 0;
+}
+
+.popup-main {
+  height: 100%;
+
+  .ivu-form .ivu-form-item-label{
+    padding: 6px 12px 5px 0;
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .ivu-radio-wrapper{
+    font-size: 12px;
+  }
+  .ivu-radio-group{
+    line-height: 25px;
+  }
+  .ivu-radio-inner{
+    width: 14px;
+    height: 14px;
+    &:after{
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  .ivu-form-item-content{
+    height: 25px;
+    line-height: 23px;
+  }
+
+  .ivu-select-selection,
+  .ivu-input {
+    height: 25px;
+  }
+
+  .ivu-select-item{
+    font-size: 12px !important;
+  }
+
+  .ivu-select-single .ivu-select-selection {
+    height: 25px;
+  }
+
+  .ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+  .ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+    height: 25px;
+    line-height: 23px;
+    font-size: 12px;
+  }
+
+  .ivu-input-prefix i,
+  .ivu-input-suffix i {
+    line-height: 25px;
+  }
+
+  .popup-form-content {
+    overflow: auto;
+    padding: 20px 20px 0;
+    height: calc(100% - 40px);
+    .ivu-form-item{
+      margin-bottom: 20px;;
+    }
+  }
+
+  .ivu-input-icon{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .popup-form-btn {
+    height: 50px;
+    border-top: 1px solid #e8eaec;
+
+    .ivu-form-item {
+      float: right;
+      margin: 7px 25px 0 0;
+    }
+  }
+}
+
+// form表单
+.ivu-select-selection,
+.ivu-input {
+  border-radius: 0;
+  font-size: 12px;
+
+  &:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+  }
+}
+
+.ivu-form-inline .ivu-form-item {
+  margin: 0 10px 0 0;
+}
+
+.ivu-date-picker-cells-cell-selected em,
+.ivu-date-picker-cells-cell-selected:hover em {
+  color: #fff;
+}
+
+.ivu-input-with-suffix {
+  padding-right: 0;
+}
+
+.ivu-btn {
+  border-radius: 0;
+  font-size: 12px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.ivu-radio-inner:after {
+  border-radius: 50%;
+}
+
+.ivu-tabs-nav {
+  height: 42px;
+}
+
+.ivu-checkbox-inner{
+  width: 14px;
+  height: 14px;
+}
+.ivu-checkbox-checked .ivu-checkbox-inner:after{
+  top: 1px;
+  left: 4px;
+}
+
+
+.ivu-tabs-tab {
+  font-size: 14px;
+}
+
+.ivu-picker-confirm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ivu-btn-text {
+  border: 1px solid #dcdee2;
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+
+}
+
+.ivu-btn-primary {
+  margin-left: 20px;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+// 分页
+.ivu-page {
+  .ivu-page-options {
+    vertical-align: initial;
+
+    .ivu-select-selection {
+      border-color: #dcdee2;
+      background-color: #fff;
+      height: 24px;
+
+      .ivu-select-selected-value {
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .ivu-page-item {
+    border-radius: 0;
+    font-size: 12px;
+    height: 24px;
+    line-height: 22px;
+    min-width: 24px;
+  }
+
+  .ivu-page-prev, .ivu-page-next, .ivu-page-item-jump-prev, .ivu-page-item-jump-next {
+    height: 24px;
+    line-height: 20px;
+    min-width: 24px;
+  }
+
+  .ivu-page-prev,
+  .ivu-page-next {
+    border-radius: 0;
+  }
+
+  .ivu-page-options-elevator {
+    height: 24px;
+    line-height: 24px;
+    vertical-align: inherit;
+    font-size: 12px;
+
+    input {
+      height: 24px;
+      line-height: 24px;
+      border-radius: 0;
+    }
+  }
+
+}
+
+// table
+.ivu-table{
+  &:before{
+    background-color: transparent;
+  }
+  table{
+    border-left: 1px solid #e8eaec;
+    border-right: 1px solid #e8eaec;
+  }
+  .ivu-table-header{
+    table{
+      border-top: 1px solid #e8eaec;
+    }
+  }
+  th,td{
+    padding: 5px 10px;
+    height: 25px;
+    line-height: 25px;
+  }
+  th{
+    height: 40px;;
+  }
+  td:not(:first-child) {
+    border-left: 1px dashed #c7c7c7;
+  }
+}
+.ivu-table-row-highlight td,
+.ivu-table-stripe .ivu-table-body tr.ivu-table-row-highlight:nth-child(2n) td,
+.ivu-table-stripe .ivu-table-fixed-body tr.ivu-table-row-highlight:nth-child(2n) td,
+tr.ivu-table-row-highlight.ivu-table-row-hover td {
+  background-color: #BFEFFF;
+}
+.ivu-layout-content{
+  flex: none;
+  height: 100%;
+}
+.ivu-table-cell {
+  padding-left: 0;
+  padding-right: 0;
+
+  a {
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

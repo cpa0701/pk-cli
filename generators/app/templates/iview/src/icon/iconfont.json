@@ -1,0 +1,16 @@
+{
+  "id": "1460407",
+  "name": "pumkin-base",
+  "font_family": "pkfont",
+  "css_prefix_text": "pk-",
+  "description": "前端基础框架",
+  "glyphs": [
+    {
+      "icon_id": "1404284",
+      "name": "胡萝卜",
+      "font_class": "huluobu",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    }
+  ]
+}

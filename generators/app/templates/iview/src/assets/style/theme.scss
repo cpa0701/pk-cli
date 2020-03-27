@@ -1,0 +1,359 @@
+/*主题文件*/
+@mixin theme($color) {
+  $pk-mainColor: $color;
+  $pk-lightenColor: lighten(desaturate($pk-mainColor, 45%), 61%);
+
+  /*头部*/
+  .pk-header {
+    background-color: $pk-mainColor;
+  }
+
+  /*加载*/
+  .pk-loading {
+    border: 15px solid $pk-mainColor;
+
+    p {
+      color: $pk-mainColor;
+    }
+  }
+
+  /*表单*/
+  .common-input {
+    &:focus {
+      border-color: $pk-mainColor;
+    }
+  }
+
+  .pk-password-sms {
+    span {
+      background-color: $pk-mainColor;
+    }
+  }
+
+  /*side-menu*/
+  .menu-item.ivu-menu-light.ivu-menu-vertical {
+    > .ivu-menu-submenu { // 有子菜单
+      .ivu-menu-submenu-title {
+        &:hover {
+          background: $pk-lightenColor;
+        }
+      }
+
+      .ivu-menu {
+        .ivu-menu-item-active, .ivu-menu-item:hover {
+          background: $pk-lightenColor;
+        }
+
+        .ivu-menu-item-active {
+          span {
+            color: $pk-mainColor;
+          }
+        }
+      }
+    }
+
+    > .ivu-menu-item-active {
+      span {
+        color: $pk-mainColor;
+      }
+
+      &:after {
+        background: $pk-mainColor;
+      }
+    }
+    >.ivu-menu-item{
+      &:hover{
+        background: $pk-lightenColor;
+      }
+    }
+  }
+
+  /*success*/
+  .pk-success {
+    a {
+      color: $pk-mainColor;
+    }
+  }
+
+  /*collapsed-menu*/
+  .menu-small-left {
+    &::before {
+      background: $pk-mainColor;
+    }
+
+    .menu-small-right {
+      .activeMenu {
+        a {
+          color: $pk-mainColor;
+        }
+      }
+
+      .menu-right-list {
+        a:hover {
+          color: $pk-mainColor;
+        }
+      }
+    }
+  }
+
+  /*search-box*/
+  .search-box {
+    input {
+      border-bottom: 1px solid $pk-mainColor;
+    }
+  }
+
+  /*login-spin*/
+  .login-spin-col {
+
+    .ivu-spin {
+      color: $pk-mainColor;
+
+    }
+  }
+
+  /*password*/
+  .pk-password {
+    .password-nav {
+      a {
+        &:hover {
+          color: $pk-mainColor;
+        }
+      }
+    }
+
+    .password-bottom {
+      a {
+        color: $pk-mainColor;
+      }
+    }
+  }
+
+  .pk-header-name {
+    color: $pk-mainColor;
+  }
+
+  /*滚动条样式*/
+  div {
+    &::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+      background: darken($pk-mainColor, 5%);
+      border: 1px solid $pk-mainColor;
+      border-image: linear-gradient(180deg, rgba($pk-mainColor, 0.5), rgba($pk-mainColor, 0), rgba($pk-mainColor, 0.5)) 1 1;
+      /*滚动条鼠标移上去*/
+
+      &:hover {
+        background-color: lighten($pk-mainColor, 5%);
+      }
+    }
+
+    &::-webkit-scrollbar-track { /*滚动条里面轨道*/
+      background: linear-gradient(180deg, rgba($pk-mainColor, .1) 0%, rgba($pk-mainColor, .2) 100%);
+      border: 1px solid $pk-mainColor;
+      border-image: linear-gradient(180deg, rgba($pk-mainColor, .5), rgba($pk-mainColor, 0), rgba($pk-mainColor, .5)) 1 1;
+    }
+  }
+
+  .common-password-btn {
+    background-color: $pk-mainColor;
+
+    &:hover {
+      background-color: darken($pk-mainColor, 5%);;
+    }
+  }
+
+  /*iview*/
+  // table
+  .ivu-table-cell {
+
+    a {
+      color: $pk-mainColor;
+
+      &:hover {
+        color: $pk-mainColor;
+      }
+    }
+  }
+
+  th .ivu-table-cell {
+    color: darken($pk-mainColor, 10%)
+  }
+
+  tr.ivu-table-row-hover td {
+    background-color: $pk-lightenColor;
+  }
+
+  // form表单
+  .ivu-select-selection,
+  .ivu-input {
+    border-color: $pk-mainColor;
+    background-color: $pk-lightenColor;
+
+    &:focus {
+      border-color: $pk-mainColor;
+    }
+
+    &:hover {
+      border-color: $pk-mainColor;
+    }
+  }
+
+  .ivu-select-item-selected,
+  .ivu-select-item-selected:hover {
+    color: $pk-mainColor;
+  }
+
+  .ivu-date-picker-cells-cell-selected em,
+  .ivu-date-picker-cells-cell-selected:hover em {
+    background: $pk-mainColor;
+    box-shadow: 0 0 0 1px $pk-mainColor inset;
+  }
+
+  .ivu-date-picker-cells-focused em {
+    -webkit-box-shadow: 0 0 0 1px $pk-mainColor inset;
+    box-shadow: 0 0 0 1px $pk-mainColor inset;
+  }
+
+  .ivu-date-picker-cells-cell-today em:after {
+    background: $pk-mainColor;
+  }
+
+  // 按钮
+  .ivu-btn-success {
+    background-color: $pk-mainColor;
+    border-color: $pk-mainColor;
+
+    &:hover {
+      background-color: lighten($pk-mainColor, 5%);
+      border-color: lighten($pk-mainColor, 5%);
+    }
+  }
+
+  .ivu-btn {
+    &:hover {
+      border: 1px solid $pk-mainColor;
+    }
+  }
+
+  .ivu-checkbox-checked .ivu-checkbox-inner {
+    border-color: $pk-mainColor;
+    background-color: $pk-mainColor;
+  }
+
+  .ivu-checkbox-checked:hover .ivu-checkbox-inner {
+    border-color: $pk-mainColor;
+  }
+
+  .ivu-radio-checked:hover .ivu-radio-inner {
+    border-color: $pk-mainColor;
+  }
+
+  .ivu-radio-checked .ivu-radio-inner {
+    border-color: $pk-mainColor;
+  }
+
+  .ivu-radio-inner:after {
+    background-color: $pk-mainColor;
+  }
+
+  .ivu-switch-checked {
+    border-color: $pk-mainColor;
+    background-color: $pk-mainColor;
+  }
+
+  .ivu-tabs-nav {
+
+    .ivu-tabs-tab-active,
+    .ivu-tabs-tab:hover {
+      color: $pk-mainColor;
+    }
+  }
+
+  .ivu-tabs-ink-bar {
+    background-color: $pk-mainColor;
+  }
+
+
+  .ivu-btn-text {
+
+    &:hover {
+      color: $pk-mainColor;
+    }
+  }
+
+  .ivu-btn-default:hover {
+    color: $pk-mainColor;
+  }
+
+  .ivu-btn-primary {
+    background-color: $pk-mainColor;
+    border-color: $pk-mainColor;
+
+    &:hover {
+      background-color: lighten($pk-mainColor, 5%);
+      border-color: lighten($pk-mainColor, 5%);
+    }
+  }
+
+  .ivu-loading-bar {
+    .ivu-loading-bar-inner-color-primary {
+      background: darken($pk-mainColor, 10%);
+    }
+  }
+
+  // 分页
+  .ivu-page {
+
+    .ivu-page-item-active,
+    .ivu-page-item:hover {
+      border-color: $pk-mainColor;
+
+      a {
+        color: $pk-mainColor;
+      }
+    }
+
+    .ivu-page-prev,
+    .ivu-page-next {
+
+      &:hover {
+        border-color: $pk-mainColor;
+
+        a {
+          color: $pk-mainColor;
+        }
+      }
+    }
+
+    .ivu-page-options-elevator {
+
+      input {
+
+        &:focus {
+          border-color: $pk-mainColor;
+        }
+
+        &:hover {
+          border-color: $pk-mainColor;
+          -webkit-box-shadow: 0 0 0 2px lighten($pk-mainColor, 55%);
+          box-shadow: 0 0 0 2px lighten($pk-mainColor, 55%);
+        }
+      }
+    }
+  }
+}
+
+.green-skin {
+  @include theme(#00b0a0);
+}
+
+.blue-skin {
+  @include theme(#213F66);
+}
+
+.yellow-skin {
+  @include theme(#e54724);
+}
+
+.red-skin {
+  @include theme(#8D0077);
+}

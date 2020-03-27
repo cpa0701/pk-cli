@@ -1,0 +1,136 @@
+// text color
+$pk-mainText: #1D2935;
+$pk-lightenText: #7B8F9A;
+$pk-error: #FF5946;
+
+$pk-lineNormal: #DCDFE7;
+$pk-bacNormal: #F3F5F8;
+
+html, body, #app {
+  height: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+em {
+  font-style: normal;
+}
+
+i {
+  font-style: normal;
+}
+
+.none {
+  display: none;
+}
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.font12px {
+  font-size: 12px;
+}
+
+.font14px {
+  font-size: 14px;
+}
+
+.font16px {
+  font-size: 16px;
+}
+
+.pk-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/**
+  禁用的按钮
+ */
+.disable-button {
+  color: $pk-lightenText !important;
+  cursor: not-allowed;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.pk-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.blank20 {
+  height: 20px;
+}
+
+.common-password-btn {
+  width: 330px;
+  height: 44px;
+  border-radius: 2px;
+  line-height: 44px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+/*滚动条样式*/
+div {
+  &::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 6px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 6px;
+    /*滚动条鼠标移上去*/
+  }
+
+  &::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    width: 6px;
+    border-radius: 6px;
+  }
+}
