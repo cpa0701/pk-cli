@@ -11,7 +11,7 @@
     "core-js": "^2.6.5",
     "dayjs": "^1.8.16",
     "js-cookie": "^2.2.1",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "mavon-editor": "^2.7.6",
     "tui-editor": "^1.4.10",
     "view-design": "^4.0.2",
